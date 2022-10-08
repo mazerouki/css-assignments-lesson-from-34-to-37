@@ -30,3 +30,33 @@ div:empty {
     font-weight: bold;
     margin-right: 12px;
 }
+/*Assign3*/
+/* Assign3 */
+.three p {
+    background-color: #eee;
+    padding: 15px;
+    width: 350px;
+    margin: 20px auto;
+    border-left: 5px solid rgb(228, 63, 91);
+    position: relative;
+}
+.three p::before {
+    text-align: center;
+    left: -90px;
+    position: absolute;
+    content: attr(data-person);
+    background-color: #eee;
+    width: 50px;
+    padding: 10px;
+    top: 5px;
+}
+.three p::after {
+    margin-top: -10px;
+    content: "";
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent rgb(228, 63, 91) transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: -25px;
+}  
