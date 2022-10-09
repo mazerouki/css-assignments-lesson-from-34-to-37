@@ -40,7 +40,7 @@ div:empty {
     border-left: 5px solid rgb(228, 63, 91);
     position: relative;
 }
-.three p::before {
+.GI p::before {
     text-align: center;
     left: -90px;
     position: absolute;
@@ -60,3 +60,30 @@ div:empty {
     top: 50%;
     left: -25px;
 }  
+/* Assign4 */
+.four p {
+    background-color: #eee;
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    counter-increment: div;
+    position: relative;
+    line-height: 2;
+    border-right: solid 5px red;
+} 
+ .four p::before {
+    left: -61px;
+    top: 0; 
+    content: counter(div);
+    width: 41px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    position: absolute;
+    line-height: 2;
+    font-weight: bold;
+    font-family: arial;
+} 
